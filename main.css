@@ -15,3 +15,26 @@
     margin-left: 100px;
     margin-right: 100px;
 }
+
+.imagenes-card{
+    position: relative;
+    height: 700px;
+    width: 700px;
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px;
+    
+    float: right;
+}
+
+.tabla-card{
+    position: relative;
+   
+    width: 700px;
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    float: left;
+}
+
