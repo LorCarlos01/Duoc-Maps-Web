@@ -93,4 +93,15 @@ footer{
     float: right;
 }
 
+.Table{
+    justify-content: center;
+ }
 
+li{
+    list-style: none;
+}
+
+.two-columns {
+    width: 48%;
+    display: inline-block;
+    }

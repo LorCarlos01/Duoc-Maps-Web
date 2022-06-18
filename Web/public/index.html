@@ -12,7 +12,7 @@
 
 <body style="background-color: rgb(255, 255, 255);">
   <nav class="navbar navbar-expand-lg navbar-primary " style="background-color: #FDCA1D">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <img src="/images/Logo-Duoc.png" width="107px" height="">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,21 +26,6 @@
         <li class="nav-item">
           <a class="nav-link" href="#contacto">Contáctanos</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-            Pisos
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Piso -2</a>
-            <a class="dropdown-item" href="#">Piso -1</a>
-            <a class="dropdown-item" href="#">Piso 1</a>
-            <a class="dropdown-item" href="#">Piso 2</a>
-            <a class="dropdown-item" href="#">Piso 3</a>
-            <a class="dropdown-item" href="#">Piso 4</a>
-            <a class="dropdown-item" href="#">Piso 5</a>
-            <a class="dropdown-item" href="#">Piso 5</a>
-          </div>
-        </li>
       </ul>
     </div>
   </nav>
@@ -52,13 +37,16 @@
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active" data-interval="4000">
+      <div class="carousel-item active" data-interval="2500">
+        <a href="#pisos">
         <img src="images/sede.png" width="1900"" height="600">
+      </a>
         <div class="carousel-caption d-none d-md-block">
           <h3>¿Estás perdido?</h3>
           <p>Haz click en esta imágen para que puedas recorrer tu sede.</p>
         </div>
       </div>
+    
       <div class="carousel-item" data-interval="4000">
         <img src="images/punto_reclicaje.png" width="1900"" height="600">
         <div class="carousel-caption d-none d-md-block">
@@ -102,14 +90,13 @@
   <br>
 </div>
   <h1 id="imprimir"></h1>
-  <img src="ghost.png" >
 
     <!--Mapa-->
-  
     <div class="bordes-map bg-white" >
-      <form>
-          
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <form> 
+
+        <div class="col-12" id="pisos">
+        <ul class="nav nav-tabs" id="myTab">
             <li  class="nav-item" ><a class="nav-link" href="#seccion-2" aria-controls="seccion-2" data-toggle="tab" role="tab">Piso -2</a></li>
             <li  class="nav-item" ><a class="nav-link" href="#seccion-1" aria-controls="seccion-1" data-toggle="tab" role="tab">Piso -1</a></li>
              <li  class="nav-item" ><a class="nav-link active" href="#seccion1" aria-controls="seccion1" data-toggle="tab" role="tab">Piso 1</a></li>
@@ -119,95 +106,109 @@
              <li  class="nav-item" ><a class="nav-link" href="#seccion5" aria-controls="seccion5" data-toggle="tab" role="tab">Piso 5</a></li>
              <li  class="nav-item" ><a class="nav-link" href="#seccion6" aria-controls="seccion6" data-toggle="tab" role="tab">Piso 6</a></li>                         
              </ul>
+            </div>
+
+            <div>
              <div class="tab-content">
-  
-              
-  
+
               <div role="tabpanel" class="tab-pane" id="seccion-1">
                 <div class="form-group">
-      
-                    
-                  <div class="card text-center" >
+                  <div class="card text-center">
                     <div class="card-header">
                       <h5 class="card-title">Piso -1</h5>
                       <div class="card-body" >
-                        <img src="images/piso-1.jpg" alt="">
+                        <img class="imagenes-card border two-columns border-5 img-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12"src="images/piso.jpg" alt="">
+                        <table class="tabla-card table table-bordered">
+                          <thead class="table-dark">
+                            <tr>
+                              Salas
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <div class="card-body col-lg-6 col-md-6 col-sm-12 col-xs-12" id="pisomenosuno">
+                              </div>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div> 
                    </div>
-                   
+                 </div>
                 </div>
-               </div>
-  
-               <div role="tabpanel" class="tab-pane" id="seccion-2">
+
+
+              <div role="tabpanel" class="tab-pane" id="seccion-2">
                 <div class="form-group">
-      
-                    
-                  <div class="card text-center" >
+                  <div class="card text-center">
                     <div class="card-header">
                       <h5 class="card-title">Piso -2</h5>
                       <div class="card-body" >
-                        <img src="images/piso-2.jpg" alt="">
+                        <img class="imagenes-card border two-columns border-5 img-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12"src="images/piso.jpg" alt="">
+                        <table class="tabla-card table table-bordered">
+                          <thead class="table-dark">
+                            <tr>
+                              Salas
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <div class="card-body col-lg-6 col-md-6 col-sm-12 col-xs-12" id="pisomenosdos">
+                              </div>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div> 
                    </div>
-                   
+                 </div>
                 </div>
-               </div>
-      
-  
+              
+
+            
             <div role="tabpanel" class="tab-pane active" id="seccion1">
-              <div class="form-group ">
-  
-                <div class="card text-center ">
+              <div class="form-group">
+                <div class="card text-center">
                   <div class="card-header">
                     <h5 class="card-title">Piso 1</h5>
                     <div class="card-body" >
-                      <img class="imagenes-card border border-5"src="images/piso.jpg" alt="">
-                      
+                      <img class="imagenes-card border two-columns border-5 img-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12"src="images/piso.jpg" alt="">
                       <table class="tabla-card table table-bordered">
                         <thead class="table-dark">
                           <tr>
-                            <th scope="col">Salas</th>
-                            
+                            Salas
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td id="sala" ></td>   
+                            <div class="card-body col-lg-6 col-md-6 col-sm-12 col-xs-12" id="pisouno">
+                            </div>
                           </tr>
-                          
                         </tbody>
                       </table>
-                    
                     </div>
                   </div> 
                  </div>
-                
-                
                </div>
               </div>
               
             <div role="tabpanel" class="tab-pane" id="seccion2">
             <div class="form-group">
-  
-                
               <div class="card text-center" >
                 <div class="card-header">
                   <h5 class="card-title">Piso 2</h5>
                   <div class="card-body" >
-                    <img class="imagenes-card border border-5" src="images/piso2.jpg" alt="">
+                    <img class="imagenes-card border two-columns border-5 img-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12" src="images/piso2.jpg" alt="">
   
                     <table class="tabla-card table table-bordered">
                       <thead class="table-dark">
                         <tr>
-                          <th scope="col">Salas</th>
-                          
+                          Salas
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="salas_p2" ></td>   
+                          <div class="card-body col-lg-6 col-md-6 col-sm-12 col-xs-12" id="pisodos"></div>  
                         </tr>
                         
                       </tbody>
@@ -218,32 +219,27 @@
             </div>
            </div>
   
+
            <div role="tabpanel" class="tab-pane" id="seccion3">
-            <div class="form-group">
-  
-                
+            <div class="form-group">  
               <div class="card text-center" >
                 <div class="card-header">
                   <h5 class="card-title">Piso 3</h5>
                   <div class="card-body" >
-                    <img class="imagenes-card border border-5" src="images/piso3.jpg" alt="">
+                    <img class="imagenes-card border two-columns border-5 img-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12" src="images/piso3.jpg" alt="">
   
                     <table class="tabla-card table table-bordered">
                       <thead class="table-dark">
                         <tr>
-                          <th scope="col">Salas</th>
-                          
+                          Salas
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="salas_p3" ></td>   
+                          <div class="card-body col-lg-6 col-md-6 col-sm-12 col-xs-12" id="pisotres"></div>    
                         </tr>
-                        
                       </tbody>
                     </table>
-  
-  
                   </div>
                 </div> 
                </div>
@@ -261,17 +257,17 @@
                   <h5 class="card-title">Piso 4</h5>
                   <div class="card-body" >
                     
-                    <img class="imagenes-card border border-5" src="images/piso4.jpg" alt="">
+                    <img class="imagenes-card border two-columns border-5 img-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12" src="images/piso4.jpg" alt="">
   
                     <table class="tabla-card table table-bordered">
                       <thead class="table-dark">
                         <tr>
-                          <th scope="col">Salas</th>                       
+                          Salas
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="salas_p4" ></td>   
+                          <div class="card-body col-lg-6 col-md-6 col-sm-12 col-xs-12" id="pisocuatro"></div>   
                         </tr>
                         
                       </tbody>
@@ -294,18 +290,18 @@
                   <h5 class="card-title">Piso 5</h5>
                   <div class="card-body" >
                     
-                    <img class="imagenes-card border border-5" src="images/piso5.jpg" alt="">
+                    <img class="imagenes-card border two-columns border-5 img-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12" src="images/piso5.jpg" alt="">
   
                     <table class="tabla-card table table-bordered">
                       <thead class="table-dark">
                         <tr>
-                          <th scope="col">Salas</th>
+                          Salas
                           
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td id="salas_p5" ></td>   
+                          <div class="card-body col-lg-6 col-md-6 col-sm-12 col-xs-12" id="pisocinco"></div>   
                         </tr>
                         
                       </tbody>
@@ -327,17 +323,17 @@
                   <h5 class="card-title">Piso 6</h5>
                   <div class="card-body" >
                     
-                    <img class="imagenes-card border border-6" src="images/piso6.jpg" alt="">
+                    <img class="imagenes-card border two-columns border-5 img-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12" src="images/piso6.jpg" alt="">
   
                     <table class="tabla-card table table-bordered">
                       <thead class="table-dark">
                         <tr>
-                          <th scope="col">Salas</th>                     
+                          Salas                   
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td  id="salas_p6" ></td>   
+                          <div class="card-body col-lg-6 col-md-6 col-sm-12 col-xs-12" id="pisoseis"></div>    
                         </tr>
                         
                       </tbody>
@@ -349,11 +345,81 @@
                
             </div>
            </div>
-  
-  
           </div>
-         </div>                      
+        </div>
         </form>
+        </div>    
+        
+    <!--Servicios-->
+    <div class="bordes-map bg-white" >
+      <form> 
+
+        <div class="col-12" id="pisos">
+        <ul class="nav nav-tabs" id="myTab">
+            <li  class="nav-item" ><a class="nav-link" href="#seccion-reciclaje" aria-controls="seccion-2" data-toggle="tab" role="tab">Puntos de Reciclaje</a></li>
+            <li  class="nav-item" ><a class="nav-link" href="#seccion-servicio" aria-controls="seccion-1" data-toggle="tab" role="tab">Puntos de servicio</a></li>        
+             </ul>
+            </div>
+
+            <div>
+             <div class="tab-content">
+
+              <div role="tabpanel" class="tab-pane active" id="seccion-reciclaje">
+                <div class="form-group">
+                  <div class="card text-center">
+                    <div class="card-header">
+                      <h5 class="card-title">Puntos de Reciclaje</h5>
+                      <div class="card-body" >
+                        <img class="imagenes-card border two-columns border-5 img-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12"src="images/piso.jpg" alt="">
+                        <table class="tabla-card table table-bordered">
+                          <thead class="table-dark">
+                            <tr>
+                              Salas
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <div class="card-body col-lg-6 col-md-6 col-sm-12 col-xs-12" id="pdr">
+                              </div>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div> 
+                   </div>
+                 </div>
+                </div>
+            
+            <div role="tabpanel" class="tab-pane" id="seccion-servicio">
+              <div class="form-group">
+                <div class="card text-center">
+                  <div class="card-header">
+                    <h5 class="card-title">Puntyos de Interés</h5>
+                    <div class="card-body" >
+                      <img class="imagenes-card border two-columns border-5 img-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12"src="images/piso.jpg" alt="">
+                      <table class="tabla-card table table-bordered">
+                        <thead class="table-dark">
+                          <tr>
+                            Salas
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <div class="card-body col-lg-6 col-md-6 col-sm-12 col-xs-12" id="servicio">
+                            </div>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div> 
+                 </div>
+               </div>
+              </div>
+          </div>
+        </div>
+        </form>
+        </div>
+       
 
   <!--Pie de página-->
   <footer>
